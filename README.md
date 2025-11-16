@@ -49,4 +49,13 @@ Feel free to explore, and don't hesitate to reach out if you'd like to collabora
 
 ---
 
-**Happy exploring! **
+---
+
+## 🔗 Connect With Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lycanthropeus)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/niranjan-arun-rao)
+
+---
+
+**Happy exploring! 🌲💻📖**
