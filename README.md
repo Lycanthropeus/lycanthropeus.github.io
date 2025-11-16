@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+﻿# Hi, I'm Lycanthropeus 
 
-You can use the [editor on GitHub](https://github.com/Lycanthropeus/lycanthropeus.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to my corner of the web! I'm passionate about exploring the intersection of **Machine Learning** and **Artificial Intelligence**, and I love sharing ideas and projects in this space.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
 
-### Markdown
+##  About Me
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I'm deeply interested in **ML/AI**, exploring topics like:
+- Machine Learning algorithms and applications
+- Deep Learning and neural networks
+- Natural Language Processing
+- Computer Vision
+- Data Science and analytics
 
-```markdown
-Syntax highlighted code block
+When I'm not coding, you'll find me out on the trail or lost in a good book!
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
+##  Trekking Adventures
 
-1. Numbered
-2. List
+I'm an outdoor enthusiast who loves exploring nature on foot. There's nothing quite like:
+- Discovering new hiking trails and mountain peaks
+- Capturing breathtaking views from high altitudes
+- Experiencing the serenity of wilderness
+- Challenging myself with diverse terrains
 
-**Bold** and _Italic_ and `Code` text
+Trekking is my way of unplugging and finding inspiration in nature's beauty.
 
-[Link](url) and ![Image](src)
-```
+---
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+##  Reading & Learning
 
-### Jekyll Themes
+I'm a voracious reader with interests spanning:
+- Science fiction and fantasy
+- Non-fiction on technology, psychology, and philosophy
+- Data science and AI research papers
+- Stories that inspire and challenge perspectives
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Lycanthropeus/lycanthropeus.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Reading fuels my curiosity and broadens my understanding of the world.
 
-### Support or Contact
+---
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+##  What You'll Find Here
+
+This site showcases my projects, explorations, and thoughts on ML/AI, along with occasional reflections on my adventures in trekking and reading.
+
+Feel free to explore, and don't hesitate to reach out if you'd like to collaborate or discuss anything tech-related!
+
+---
+
+**Happy exploring! **
