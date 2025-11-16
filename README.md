@@ -1,4 +1,4 @@
-﻿# Hi, I'm Lycanthropeus 
+﻿# Hi, I'm Niranjan
 
 Welcome to my corner of the web! I'm passionate about exploring the intersection of **Machine Learning** and **Artificial Intelligence**, and I love sharing ideas and projects in this space.
 
