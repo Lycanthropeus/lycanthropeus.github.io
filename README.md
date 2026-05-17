@@ -28,10 +28,10 @@ When I'm not coding, you'll find me out on the trail or lost in a good book!
 
 I'm a voracious reader. The last few books I've read include:
 
-[ ] Designing Data Intensive Applications (in-progress)
-[-] Machine Learning System Design Interview
-[-] Hands-on Machine Learning With Scikit-Learn, Keras, and Tensorflow
-[-] AI Engineering
+- [ ] Designing Data Intensive Applications (in-progress)
+- [x] Machine Learning System Design Interview
+- [x] Hands-on Machine Learning With Scikit-Learn, Keras, and Tensorflow
+- [x] AI Engineering
 
 ---
 
