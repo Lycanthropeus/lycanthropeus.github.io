@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niranjan | Portfolio</title>
+    <meta
+      name="description"
+      content="Niranjan's professional portfolio featuring background, CV, and projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --panel: #ffffff;
+        --ink: #10212f;
+        --muted: #516271;
+        --line: #d8e1e8;
+        --accent: #0a8f9a;
+        --accent-soft: #e5f7f8;
+        --navy: #0e2f44;
+        --shadow: 0 18px 40px rgba(16, 33, 47, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Manrope", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 18% 12%, #d8eef7 0%, transparent 40%),
+          radial-gradient(circle at 82% 0%, #e4f9f2 0%, transparent 36%),
+          var(--bg);
+        min-height: 100vh;
+      }
+
+      .page {
+        width: min(1080px, 92vw);
+        margin: 2.5rem auto;
+      }
+
+      .shell {
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .top {
+        padding: 2.2rem 2.2rem 1.2rem;
+        background: linear-gradient(120deg, #0f3a56, #15516f 62%, #0a8f9a);
+        color: #f8fdff;
+      }
+
+      .identity {
+        margin: 0;
+        font-family: "Newsreader", serif;
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        line-height: 1.05;
+        letter-spacing: 0.01em;
+      }
+
+      .subtitle {
+        margin: 0.65rem 0 0;
+        color: rgba(248, 253, 255, 0.9);
+        max-width: 42rem;
+        font-size: 1rem;
+      }
+
+      .tabs {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .tab {
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        background: rgba(9, 28, 42, 0.35);
+        color: #eef7ff;
+        padding: 0.65rem 1rem;
+        border-radius: 999px;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+
+      .tab:hover {
+        transform: translateY(-1px);
+        background: rgba(9, 28, 42, 0.55);
+      }
+
+      .tab.active {
+        background: #f6fcff;
+        color: var(--navy);
+        border-color: #f6fcff;
+      }
+
+      .content {
+        padding: 2rem 2.2rem 2.4rem;
+      }
+
+      .panel {
+        display: none;
+        animation: rise 0.35s ease;
+      }
+
+      .panel.active {
+        display: block;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+      }
+
+      p {
+        line-height: 1.65;
+        color: var(--muted);
+      }
+
+      .about-grid {
+        margin-top: 1.25rem;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 1rem;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem 1rem 1.15rem;
+        background: #fcfdff;
+      }
+
+      .card h3 {
+        margin: 0 0 0.55rem;
+        font-size: 1rem;
+      }
+
+      .tagline {
+        margin-top: 1.3rem;
+        display: inline-flex;
+        border-radius: 999px;
+        padding: 0.55rem 0.95rem;
+        background: var(--accent-soft);
+        color: var(--navy);
+        font-weight: 700;
+        font-size: 0.88rem;
+      }
+
+      .cv-frame {
+        margin-top: 1rem;
+        width: 100%;
+        min-height: 72vh;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: #f8fbfd;
+      }
+
+      .cv-note {
+        margin-top: 0.9rem;
+        font-size: 0.95rem;
+      }
+
+      .project-list {
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      .project {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem;
+        background: #fbfdff;
+      }
+
+      .project a {
+        color: var(--navy);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .project a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 1.6rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 800px) {
+        .top,
+        .content {
+          padding-left: 1.1rem;
+          padding-right: 1.1rem;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cv-frame {
+          min-height: 64vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main class="shell">
+        <header class="top">
+          <h1 class="identity">Niranjan Arun Rao</h1>
+          <p class="subtitle">
+            Machine Learning and AI enthusiast focused on practical systems,
+            thoughtful research, and clean engineering.
+          </p>
+
+          <nav class="tabs" aria-label="Primary">
+            <button class="tab active" data-tab="about">About</button>
+            <button class="tab" data-tab="cv">CV</button>
+            <button class="tab" data-tab="projects">Projects</button>
+          </nav>
+        </header>
+
+        <section class="content">
+          <article id="about" class="panel active">
+            <h2>About</h2>
+            <p>
+              I work at the intersection of machine learning and intelligent
+              systems, with strong interest in applied deep learning,
+              geospatial AI, and scalable model-driven products.
+            </p>
+
+            <div class="about-grid">
+              <section class="card">
+                <h3>Core Interests</h3>
+                <p>
+                  Machine learning system design, neural networks, natural
+                  language processing, computer vision, and analytical tooling
+                  for high-impact decisions.
+                </p>
+              </section>
+              <section class="card">
+                <h3>Beyond Work</h3>
+                <p>
+                  Trekking, long-form technical reading, and distilling
+                  difficult concepts into practical implementation paths.
+                </p>
+              </section>
+            </div>
+
+            <span class="tagline">Open to collaboration on ML/AI projects</span>
+          </article>
+
+          <article id="cv" class="panel">
+            <h2>CV</h2>
+            <p>
+              The CV is embedded below. If your browser cannot render it,
+              download the file using the link under the preview.
+            </p>
+            <object
+              class="cv-frame"
+              data="assets/docs/cv.pdf"
+              type="application/pdf"
+            >
+              <p>
+                CV preview is unavailable. Please place your file at
+                <strong>assets/docs/cv.pdf</strong> and reload this page.
+              </p>
+            </object>
+            <p class="cv-note">
+              Download: <a href="assets/docs/cv.pdf" target="_blank" rel="noopener">CV PDF</a>
+            </p>
+          </article>
+
+          <article id="projects" class="panel">
+            <h2>Projects</h2>
+            <ul class="project-list">
+              <li class="project">
+                <a
+                  href="https://github.com/Lycanthropeus/Infrared-Image-Colorization-using-Deep-Neural-Networks"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Infrared Image Colorization using Deep Neural Networks
+                </a>
+                <p>
+                  Colorization pipeline for near-infrared imagery designed to
+                  run with constrained GPU resources.
+                </p>
+              </li>
+              <li class="project">
+                <a
+                  href="https://github.com/Lycanthropeus/MLSystemDesign-Solved"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  ML System Design: Solved Cases
+                </a>
+                <p>
+                  Practical architecture walkthroughs for systems such as
+                  reverse image search and people-you-may-know.
+                </p>
+              </li>
+              <li class="project">
+                <a
+                  href="https://github.com/Lycanthropeus/AlphaEarthEmbeddings"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  AlphaEarth Embeddings for Geospatial Analysis
+                </a>
+                <p>
+                  Exploration of embedding aggregation workflows for geospatial
+                  datasets and downstream analysis.
+                </p>
+              </li>
+            </ul>
+          </article>
+
+          <footer>
+            Connect on
+            <a href="https://github.com/Lycanthropeus" target="_blank" rel="noopener">GitHub</a>
+            and
+            <a href="https://linkedin.com/in/niranjan-arun-rao" target="_blank" rel="noopener">LinkedIn</a>.
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const panels = document.querySelectorAll(".panel");
+
+      function showTab(tabId) {
+        tabs.forEach((tab) => {
+          tab.classList.toggle("active", tab.dataset.tab === tabId);
+        });
+
+        panels.forEach((panel) => {
+          panel.classList.toggle("active", panel.id === tabId);
+        });
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          showTab(tab.dataset.tab);
+          history.replaceState(null, "", `#${tab.dataset.tab}`);
+        });
+      });
+
+      const initial = window.location.hash.replace("#", "");
+      if (initial && ["about", "cv", "projects"].includes(initial)) {
+        showTab(initial);
+      }
+    </script>
+  </body>
+</html>
