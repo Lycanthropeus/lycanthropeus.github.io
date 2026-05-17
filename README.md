@@ -17,27 +17,21 @@ When I'm not coding, you'll find me out on the trail or lost in a good book!
 
 ---
 
-##  Trekking Adventures
-
-I'm an outdoor enthusiast who loves exploring nature on foot. There's nothing quite like:
-- Discovering new hiking trails and mountain peaks
-- Capturing breathtaking views from high altitudes
-- Experiencing the serenity of wilderness
-- Challenging myself with diverse terrains
-
-Trekking is my way of unplugging and finding inspiration in nature's beauty.
+##  My Projects
+- A project I did to colorize near-infrared images using minimal GPU resources. Find it [here.](https://github.com/Lycanthropeus/Infrared-Image-Colorization-using-Deep-Neural-Networks)
+- A collection of popular machine learning system design problems - from Reverse Image Search to PMYK (People You May Know). [Here.](https://github.com/Lycanthropeus/MLSystemDesign-Solved)
+- Aggregating Google's AlphaEarth embeddings for Geospatial Data analysis - [here.](https://github.com/Lycanthropeus/AlphaEarthEmbeddings) 
 
 ---
 
 ##  Reading & Learning
 
-I'm a voracious reader with interests spanning:
-- Science fiction and fantasy
-- Non-fiction on technology, psychology, and philosophy
-- Data science and AI research papers
-- Stories that inspire and challenge perspectives
+I'm a voracious reader. The last few books I've read include:
 
-Reading fuels my curiosity and broadens my understanding of the world.
+[ ] Designing Data Intensive Applications (in-progress)
+[-] Machine Learning System Design Interview
+[-] Hands-on Machine Learning With Scikit-Learn, Keras, and Tensorflow
+[-] AI Engineering
 
 ---
 
